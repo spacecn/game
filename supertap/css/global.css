@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* import */
+/* @import 'ico.css'; */
+
+/* CSS Document */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video
+{margin:0; padding:0; -webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-text-size-adjust:100%; -webkit-user-select:none; -ms-user-select:none; user-select:none; font-family:inherit;}
+:focus{outline:none;}
+a{text-decoration:none; -webkit-touch-callout:none;}
+html{font-size:62.5%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+ul,ol,li,dl,dt,dd,pre,form,fieldset,img,div{border:none;}
+ol,ul{list-style:none;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{display:block;}
+table{border-collapse:collapse; border-spacing:0;}
+input,textarea{border:1px solid; border-radius:0; padding:0; font-family:Helvetica,STHeiti STXihei,Microsoft JhengHei,Microsoft YaHei,Arial;}
+textarea{word-wrap:break-word;resize:none;}
+input,select{vertical-align:middle; font:99% Helvetica,STHeiti STXihei; color:#666;}
+img{max-width:100%;}
+a{color:#666; text-decoration:none;}
+
+/* Andriod,IOS Style */
+a,button,input{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+@media all and (-webkit-transform-3d){
+	a,button,input{-webkit-tap-highlight-color:rgba(130,130,130,.52);}
+}
+
+/* COMMON
+----------------------------------- */
+html,body{width:100%;}
+html{}
+body{margin:0; padding:0; font-family:Helvetica,"STHeiti STXihei","Microsoft JhengHei","Microsoft YaHei",Arial; color:#000;background:#000;}
+.clear{clear:both;}
+.clearfix,ul.list li,.w{zoom:1;}
+.clearfix:after,ul.list li:after,.w:after
+{content:"."; display:block; overflow:hidden; height:0; clear:both; visibility:hidden;}

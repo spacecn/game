@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>超级收银员</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+<!-- 加载中...[[ -->
+<div class="popload" id="popload">
+	<div class="popload-main">
+		<span class="popload-main-ico"></span>
+		<p class="popload-main-txt">疯狂加载中...</p>
+	</div>
+</div>
+<!-- 加载中...]] -->
+
+<!-- 首页[[ -->
+<section class="index page hide" id="index">
+	<img src="images/index_bg.png" alt="超级收银员" width="300" height="280" class="index-img">
+	<a href="javascript:;" class="btn btn-red index-btn" id="index-btn">玩一把扫码收银 &gt;</a>
+	<p class="index-info">
+		<a href="#" target="_blank" class="index-info">什么是微信扫码刷卡？</a>
+	</p>
+</section>
+<!-- 首页]] -->
+
+<!-- 游戏中[[ -->
+<section class="game page hide" id="game">
+	<header class="game-head">
+		<strong class="order" id="game_order">0</strong>
+		<em class="time" id="game_time">0</em>
+	</header>
+	
+	<ul class="game-main">
+		<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+	</ul>
+</section>
+<!-- 游戏中]] -->
+
+<!-- 游戏指引[[ -->	
+<div class="guide page hide" id="guide">
+	<div class="guide-bg"></div>
+</div>
+<!-- 游戏指引]] -->	 
+
+<!-- 游戏结果[[ -->
+<section class="state page show-success hide" id="state">
+	<div class="state-wrap">
+		<div class="state-fail"></div>
+		<div class="state-success"></div>
+		<div class="state-order"><strong>0</strong>单</div>
+		<p class="state-info">以下门店可找到真正超级收银员体验微信扫码刷卡</p>
+		<div class="state-business">
+			<img src="images/business_logo.jpg" alt="商家图标" width="242" height="69">
+		</div>
+		<div class="state-btn flex flex-pack-justify">
+			<a href="javascript:;" class="btn btn-red state-btn-again" id="again">再玩一次</a>
+			<a href="javascript:;" class="btn btn-yellow state-btn-fail">喊朋友挑战</a>
+			<a href="javascript:;" class="btn btn-yellow state-btn-success">分享战绩</a>
+		</div>
+	</div>
+</section>
+<!-- 游戏结果]] -->
+
+<!-- 邀请好友[[ -->
+<div class="mask page share-mask hide" id="js_mask_layer">
+	<div class="share-ico"></div>
+	<p class="share-txt">点此选择【发送给朋友】</p>
+</div>
+<!-- 邀请好友]] -->
+
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/pageResponse.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+$(function(){
+	// 页面重置
+	$(window).resize(function(){
+		pageResponse({
+	        selectors : '.page', //模块的类名
+	        mode : 'contain',    // auto || contain || cover 
+	        width : '320',     //默认宽320px 
+	        height : '504',     //默认高504px
+	        origin : 'center center 0'     //缩放中心点，可选，在contain和cover模式下无效，默认为"left top 0"
+	    });
+	}).resize();
+});
+</script>
+</html>
+
