@@ -1,4 +1,4 @@
-# 小游戏集合
+# h5+css3+js 集合
 
 ### 目录
 * supertap [超级收银员](http://www.i3ui.com/w/supertap/ "超级收银员")
