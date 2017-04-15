@@ -1,0 +1,128 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,del,dfn,em,img,ins,kbd,q,samp,small,strong,b,i,
+dl,dt,dd,ol,ul,li,fieldset,form,label,table,tbody,tfoot,thead,tr,th,td,article,aside,footer,header,nav,section 
+{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent
+}
+html, body{
+	width:100%;
+	height:100%;
+	position:relative;
+	transform-style:preserve-3d;
+	backface-visibility:hidden;
+	perspective:800;
+}
+ol,ul,li {
+	list-style-type:none
+}
+
+#content,.content-wrap,.content-wrap>li{
+	position:relative;width:100%;height:100%;overflow:hidden;
+}
+
+#content{
+	position:absolute;
+}
+
+.content-wrap>li{
+	float:left;background-size:100% 100%;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+}
+
+.button {
+    position: absolute;
+    bottom: 0;
+}
+
+.charector {
+	position:absolute;
+    left:6%;
+    top:55%;
+    width:151px;
+    height:291px;
+    background:url("../images/boy.png") 0 -291px no-repeat;
+}
+
+/* 普通慢走 */
+.slowWalk{
+	-webkit-animation:person-slow 950ms infinite steps(1, start);
+	animation:person-slow 950ms infinite steps(1, start);
+}
+/* 普通慢走[带花] */
+.slowFlowerWalk{
+	-webkit-animation:person-flower-slow 950ms infinite step-start;
+	animation:person-flower-slow 950ms infinite step-start;
+}
+@-webkit-keyframes person-slow{
+	0%{background-position: 0 -291px;}
+	25%{background-position: -602px 0;}
+	50%{background-position: -302px -291px;}
+	75%{background-position: -151px -291px;}
+	100%{background-position: 0 -291px;}
+}
+@keyframes person-slow{
+	0%{background-position: 0 -291px;}
+	25%{background-position: -602px 0;}
+	50%{background-position: -302px -291px;}
+	75%{background-position: -151px -291px;}
+	100%{background-position: 0 -291px;}
+}
+@-webkit-keyframes person-flower-slow{
+	0%{background-position: -453px 0;}
+	25%{background-position: -904px 0;}
+	50%{background-position: -451px 0;}
+	75%{background-position: -753px 0;}
+	100%{background-position: -300px 0;}
+}
+@keyframes person-flower-slow{
+	0%{background-position: -453px 0;}
+	25%{background-position: -904px 0;}
+	50%{background-position: -451px 0;}
+	75%{background-position: -753px 0;}
+	100%{background-position: -300px 0;}
+}
+
+/* 人物暂停 */
+.pauseWalk{
+	-webkit-animation-play-state:paused;
+	animation-play-state:paused;
+}
+.boyOriginal{
+	background-position: -150px 0;
+}
+
+.boy-rotate{
+	-webkit-animation:boy-rotate 850ms 1 step-start forwards;
+    animation:boy-rotate 850ms 1 step-start forwards;
+}
+@keyframes boy-rotate{
+    0% {background-position: -603px -291px;}
+    16.7% {background-position: -150px 0;}
+    33.4% {background-position: -453px -291px;}
+    50.1% {background-position: 0 0;}
+    66.8% {background-position: -903px -291px;}
+    83.5% {background-position: -753px -291px;}
+    100% {background-position: -603px -291px;}
+}
+
+.btn-play{
+	position:relative;width:100%;height:100%;background:rgba(0,0,0,.8);z-index:999999;
+}
+.btn-play p{
+	width:380px;height:130px;position:absolute;top:50%;left:50%;margin-left:-190px;margin-top:-40px;text-align:center;
+}
+.btn-play p i{
+	position:absolute;top:0;left:150px;width:80px;height:80px;background:url('../images/play.png') center 0 no-repeat;-webkit-background-size:auto 100%;background-size:auto 100%;
+}
+.btn-play p b{
+	position:absolute;left:0;bottom:0;color:#fff;width:100%;font-size:1.8rem;font-weight:normal;
+}
